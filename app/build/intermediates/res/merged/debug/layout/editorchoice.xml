@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+	<LinearLayout
+	    android:id="@+id/thumbnail"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_marginRight="5dip"
+	    android:background="@drawable/image_bg"
+	    android:padding="3dp">
+	    
+		<ImageView
+	        android:id="@+id/imageview1"
+	        android:layout_width="82dp"
+	        android:layout_height="82dp"
+	        android:src="@drawable/load" />
+		
+	</LinearLayout>		 
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"       
+        style="@style/EditorChoiceListTitle"
+        android:text="Editor Choice Title"/>
+
+</RelativeLayout>

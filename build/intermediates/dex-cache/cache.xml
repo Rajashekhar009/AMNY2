@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Naresh\.android\build-cache\9e735945de0605eb884938943b6b4f508b14d99d\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="E:\Android\AMNY\June-21-2017\AMNY\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_74a4254b35dd90cb0a4ca592bc69e83f7cb950dd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Android\AMNY\June-21-2017\AMNY\app\libs\libGoogleAnalytics.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8d0254fe638021ff2ae4fe5bd53c2937006fdab5">
+        <dex dex="E:\Android\AMNY\June-21-2017\AMNY\app\build\intermediates\transforms\dex\debug\folders\1000\2\libGoogleAnalytics_edfe689782e7880b359eb128fca6b8842d4c89b0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Android\AMNY\June-21-2017\AMNY\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f3ef0ac23d251128bd67534d39a0de62acf00935">
+        <dex dex="E:\Android\AMNY\June-21-2017\AMNY\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_85b27917b43c7a5ce7fa2c9c33904c17d7c3440f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Android\AMNY\June-21-2017\AMNY\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="E:\Android\AMNY\June-21-2017\AMNY\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_409a8fd457e52bcf60ca2a4d5d4903f464579895\classes.dex" />
+    </item>
+
+</items>

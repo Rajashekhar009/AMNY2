@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+	android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical"
+    android:background="#ffffff">
+    
+<RelativeLayout
+	    android:id="@+id/titlelayout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="40dp"
+	    style="@style/TopHeaderBar" >
+
+	<ImageView
+		android:id="@+id/topLeftBtn"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="5dp"
+		android:layout_alignParentLeft="true"
+		android:layout_centerVertical="true"
+		android:src="@drawable/back_icon" />
+
+	<TextView
+		android:id="@+id/titlename"
+		android:layout_width="wrap_content"
+		android:layout_height="fill_parent"
+		android:text="@string/title_activity_my_favorites"
+		style="@style/TitleBarText" />
+
+	<ImageView
+		android:id="@+id/refresh"
+		style="@style/TitleBarOperation"
+		android:layout_width="25dp"
+		android:layout_height="25dp"
+		android:layout_marginRight="5dp"
+		android:src="@drawable/refresh_icon"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"/>
+
+		</RelativeLayout>
+
+<RelativeLayout 
+    android:id="@+id/listlayout"    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#ffffff"
+	android:paddingBottom="2dp">
+	<ListView
+	        android:id="@+id/list"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:divider="#b5b5b5"
+	        android:dividerHeight="1dp"
+	        android:listSelector="@drawable/list_selector"
+	        android:layout_marginBottom="55dp">	    
+	</ListView>
+	<com.google.android.gms.ads.AdView
+		xmlns:ads="http://schemas.android.com/apk/res-auto"
+		android:id="@+id/adView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_alignParentBottom="true"
+		ads:adSize="BANNER"
+		ads:adUnitId="@string/banner_home_footer" />
+	
+    </RelativeLayout>
+
+	<RelativeLayout
+		android:id="@+id/layoutloading"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:visibility="gone">
+
+		<ProgressBar
+			android:id="@+id/progressBar1"
+			android:layout_gravity="center"
+			android:layout_width="25dp"
+			android:layout_height="25dp"
+			android:indeterminateDrawable="@drawable/progress_bar"
+			android:gravity="center"
+			android:layout_centerInParent="true" />
+	</RelativeLayout>
+
+</LinearLayout>

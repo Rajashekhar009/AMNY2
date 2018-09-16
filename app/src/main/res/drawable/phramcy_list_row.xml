@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">	
+	<item 
+	    android:left="@dimen/tab_space" 
+	    android:right="@dimen/tab_space"> 
+	    
+		<shape android:shape="rectangle">
+		    <stroke android:color="@color/tabDark" android:width="0.5dp" />
+			<corners android:radius="3dp"/>
+			<solid android:color="#30e8eef6" />
+		</shape>
+	</item>	
+</layer-list>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.solar.allmediany"
+    android:installLocation="auto"
+    android:versionCode="6"
+    android:versionName="3.2" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19" />
+
+    <permission
+        android:name="com.solar.allmediany.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.solar.allmediany.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <meta-data
+        android:name="ADMOB_ALLOW_LOCATION_FOR_ADS"
+        android:value="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/allmediany"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Black.NoTitleBar" >
+
+        <!--
+            <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="4030500" />
+        -->
+
+        <activity
+            android:name="com.solar.allmediany.SplashScreen"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.solar.allmediany.Main"
+            android:screenOrientation="portrait" />
+
+        <!--
+            <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        -->
+
+        <activity
+            android:name="com.solar.allmediany.BreakingNews"
+            android:screenOrientation="portrait"
+            android:theme="@style/myDialog"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.solar.allmediany.BreakingNewsCategory"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!--
+        <activity
+            android:name="com.solar.allmediany.Loadinganimation"
+            android:screenOrientation="portrait" >
+        </activity>
+        -->
+        <activity
+            android:name="com.solar.allmediany.Featuredarticles"
+            android:label="@string/feature"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.solar.allmediany.Latestnews"
+            android:label="@string/latestnews"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.solar.allmediany.Sections"
+            android:label="@string/Sections"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.solar.allmediany.Editorchoice"
+            android:label="@string/editor"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.solar.allmediany.TopStories"
+            android:label="@string/topStories"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.solar.allmediany.UserLoginActivity"
+            android:label="User Login"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.solar.allmediany.Details"
+            android:label="@string/Details"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!--
+        <activity
+            android:name="com.solar.allmediany.NewsCategory"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.solar.allmediany.ArticleCategory"
+            android:screenOrientation="portrait" >
+        </activity>
+        -->
+
+        <activity
+            android:name="com.solar.allmediany.CategoryList"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!--
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.solar.allmediany" />
+            </intent-filter>
+        </receiver>
+        -->
+        <activity
+            android:name="com.solar.allmediany.VideoActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.solar.allmediany.ForgotPwdActivity"
+            android:label="@string/title_activity_forgot_pwd"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.solar.allmediany.RegistrationActivity"
+            android:label="@string/title_activity_registration"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!--
+        <receiver
+            android:name="com.solar.allmediany.NetworkChangeReceiver"
+            android:label="NetworkChangeReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        -->
+
+        <activity
+            android:name="com.solar.allmediany.MyAccountActivity"
+            android:label="@string/title_activity_my_account"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.solar.allmediany.MyProfileActivity"
+            android:label="@string/title_activity_my_profile"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.solar.allmediany.MyFavoritesActivity"
+            android:label="@string/title_activity_my_favorites"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.solar.allmediany.ChangePwdActivity"
+            android:label="@string/title_activity_change_pwd"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.solar.allmediany.EditProfileActivity"
+            android:label="@string/title_activity_edit_profile"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.solar.allmediany.CountriesActivity"
+            android:label="@string/title_activity_countries"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.solar.allmediany.StatesActivity"
+            android:label="@string/title_activity_states"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.solar.allmediany.CityActivity"
+            android:label="@string/title_activity_city"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"
+            android:theme="@style/Theme.IAPTheme" />
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <provider
+            android:name="com.android.tools.fd.runtime.InstantRunContentProvider"
+            android:authorities="com.solar.allmediany.com.android.tools.fd.runtime.InstantRunContentProvider"
+            android:multiprocess="true" />
+    </application>
+
+</manifest>

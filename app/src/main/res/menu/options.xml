@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+   <item
+      android:id="@+id/enable"
+      android:icon="@drawable/about_def"
+      android:title="Enable Notification for Breaking News"/>
+
+   <item
+      android:id="@+id/disable"
+      android:icon="@drawable/about_def"
+      android:title="Disable Notification Messages"/>
+</menu>

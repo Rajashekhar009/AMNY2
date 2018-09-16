@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical"
+    android:background="#ffffff">
+    
+<RelativeLayout
+    android:id="@+id/titlelayout"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    style="@style/TopHeaderBar"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+	<ImageView
+		android:id="@+id/topLeftBtn"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="5dp"
+		android:layout_alignParentLeft="true"
+		android:layout_centerVertical="true"
+		android:src="@drawable/back_icon" />
+    
+    <TextView
+		android:id="@+id/titlename"
+		android:layout_width="wrap_content"
+		android:layout_height="fill_parent"
+		android:text="@string/title_activity_my_account"
+		style="@style/TitleBarText" />
+    
+    <ImageView
+        android:id="@+id/topRightBtn"
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+        android:src="@drawable/power"
+        android:layout_alignParentRight="true"
+		android:layout_marginRight="10dp"/>
+
+</RelativeLayout>
+
+<RelativeLayout
+    android:id="@+id/loginBGLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+        
+    <RelativeLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/loginRelativeLayout1"
+			android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical">
+        
+        <Button
+            android:id="@+id/imgMyProf"
+			android:onClick="funOnclick"
+			android:layout_width="fill_parent"
+			android:layout_height="40dp"
+			android:layout_marginTop="40dp"
+			android:layout_centerHorizontal="true"
+			android:text="My Profile"
+			style="@style/btnTextStyle"
+			android:background="@drawable/red_button"
+			android:gravity="center" />
+        
+        <Button
+            android:id="@+id/imgMyFav"
+            android:layout_below="@+id/imgMyProf"
+			android:onClick="funOnclick"
+			android:layout_width="fill_parent"
+			android:layout_height="40dp"
+			android:layout_marginTop="20dp"
+			android:layout_centerHorizontal="true"
+			android:text="My Favorite Articles"
+			style="@style/btnTextStyle"
+			android:background="@drawable/red_button"
+			android:gravity="center" />
+        
+        <Button
+            android:id="@+id/imgChngPwd"
+            android:layout_below="@+id/imgMyFav"
+            android:onClick="funOnclick"
+			android:layout_width="fill_parent"
+			android:layout_height="40dp"
+			android:layout_marginTop="20dp"
+			android:layout_centerHorizontal="true"
+			android:text="Change Password"
+			style="@style/btnTextStyle"
+			android:background="@drawable/red_button"
+			android:gravity="center" />
+        
+        </RelativeLayout>
+
+	<TextView
+		android:id="@+id/appVersionCode"
+		android:layout_alignParentBottom="true"
+		android:layout_margin="10dp"
+		style="@style/allVersionLink"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:text="@string/app_version_code" />
+  	
+    </RelativeLayout>
+
+</LinearLayout>

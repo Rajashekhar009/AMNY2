@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical"
+    android:background="#ffffff">    
+    
+    <RelativeLayout
+	    android:id="@+id/titlelayout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="40dp"
+	    style="@style/TopHeaderBar">
+
+		<TextView
+			android:id="@+id/titlename"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:text="@string/feature"
+			style="@style/TitleBarText" />
+
+		<ImageView
+			android:id="@+id/refresh"
+			style="@style/TitleBarOperation"
+			android:layout_width="25dp"
+			android:layout_height="25dp"
+			android:layout_marginRight="5dp"
+			android:src="@drawable/refresh_icon"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"/>
+
+	</RelativeLayout>
+    
+    <RelativeLayout
+	    android:id="@+id/rlayout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="match_parent"
+	    android:background="@drawable/list_selector"
+	    android:orientation="vertical"
+	    android:padding="5dp"
+	    android:visibility="gone">
+    
+		<RelativeLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/list_selector"
+			android:padding="5dp"
+			android:id="@+id/retitleLayout">
+
+			<TextView
+				android:id="@+id/tvTtl"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				style="@style/articleDetailTitle"
+				android:text="Featured Article Title"/>
+
+			<TextView
+				android:id="@+id/postdate"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_below="@+id/tvTtl"
+				android:text="Posted on: "
+				android:textColor="#000000"
+				android:textSize="12sp"
+				android:textStyle="italic" />
+
+			<TextView
+				android:id="@+id/date"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/tvTtl"
+				android:layout_toRightOf="@+id/postdate"
+				android:textColor="#000000"
+				android:textSize="12sp"
+				android:textStyle="italic"
+				android:text="Posted on: "/>
+
+		</RelativeLayout>
+            
+	   <RelativeLayout
+			android:layout_width="fill_parent"
+			android:layout_height="match_parent"
+			android:background="@drawable/list_selector"
+			android:orientation="horizontal"
+			android:layout_below="@+id/retitleLayout" >
+	
+	    	<RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/relativeVideo" >
+	
+	        <RelativeLayout 
+	            android:id="@+id/relLayout1"
+	            android:layout_width="fill_parent"
+	            android:layout_height="200dp">
+	            
+		        <WebView
+		            android:id="@+id/webViewDetails"
+		            android:layout_width="fill_parent"
+		            android:layout_height="200dp" />
+		        
+		        <LinearLayout
+				    android:layout_width="36dp"			    
+				    android:layout_height="36dp"
+				    android:layout_alignParentBottom="true"
+		            android:layout_alignParentRight="true"
+		            android:layout_marginRight="5dp"
+		            android:layout_marginBottom="5dp">           
+	
+		           <ImageView
+			            android:id="@+id/imgViewVideo"
+			            android:layout_width="36dp"
+			            android:layout_height="36dp"	      
+			            android:background="@drawable/ic_media_fullscreen_stretch"
+			            android:gravity="center_vertical|center_horizontal" />
+		            	
+	        	</LinearLayout>        
+		        
+	        </RelativeLayout>
+	        
+	        <RelativeLayout 
+	            android:id="@+id/relLayout2"
+	            android:layout_below="@+id/relLayout1"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content">
+		        
+	        	<LinearLayout
+			        android:id="@+id/thumbnail"
+			        android:layout_width="fill_parent"
+			        android:layout_height="200dp"
+			        android:gravity="center_horizontal|center_vertical"
+			        android:background="@drawable/image_bg"
+			        android:padding="3dp" >
+		
+			        <ImageView
+			            android:id="@+id/artimageView1"
+			            android:layout_width="wrap_content"
+			            android:layout_height="190dp"
+			            android:layout_weight="3.78"
+			            android:src="@drawable/load" />
+	            
+	    		</LinearLayout>
+	     
+	    	</RelativeLayout>
+        
+    	</RelativeLayout>
+        
+			<ScrollView
+				android:id="@+id/scrollView1"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:layout_alignRight="@+id/relativeVideo"
+				android:layout_below="@+id/relativeVideo"
+				android:layout_marginTop="5dp"
+				android:layout_marginBottom="55dp">
+
+				<TextView
+					android:id="@+id/artdesc"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					style="@style/articleDetailsContent"
+					android:text="Featured Article Description" />
+        
+    		</ScrollView>
+
+		    <com.google.android.gms.ads.AdView
+				xmlns:ads="http://schemas.android.com/apk/res-auto"
+			   	android:id="@+id/adView"
+			   	android:layout_width="wrap_content"
+			   	android:layout_height="wrap_content"
+			   	android:layout_centerHorizontal="true"
+			   	android:layout_alignParentBottom="true"
+			   	ads:adSize="BANNER"
+			   	ads:adUnitId="@string/banner_home_footer" />
+                    
+   		</RelativeLayout>
+        
+   </RelativeLayout>
+
+   <RelativeLayout
+	    android:id="@+id/rlayout2"
+	    android:layout_width="fill_parent"
+   		android:layout_height="fill_parent"
+    	android:background="#ffffff"
+    	android:visibility="visible">
+
+    	<ProgressBar
+            android:id="@+id/progressBar1"
+			android:layout_gravity="center"
+			android:layout_width="25dp"
+			android:layout_height="25dp"
+			android:indeterminateDrawable="@drawable/progress_bar"
+			android:gravity="center"
+			android:layout_centerInParent="true" />
+
+   </RelativeLayout>
+
+</LinearLayout>

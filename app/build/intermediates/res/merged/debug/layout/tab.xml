@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<TextView
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/text"
+     android:layout_width="fill_parent"
+     android:layout_height="35dp"
+     android:layout_weight="0.54"
+     android:textColor="#ffffff"
+     android:textSize="10sp"
+     android:textStyle="bold"
+     android:text="Tabs"
+     android:gravity="center"
+     android:paddingLeft="5dp"
+     android:paddingRight="5dp" />-->
+<ImageView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/icon"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:src="@drawable/amny"/>

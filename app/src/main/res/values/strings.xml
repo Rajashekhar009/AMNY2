@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, TabSample!</string>
+    <string name="app_name">AllMediaNY</string>
+    <string name="app_version_code">Version:3.2</string>
+    <string name="latestnews">Latest News</string>
+    <string name="feature">Featured Articles</string>
+    <string name="editor">Editor\'s Choice</string>
+    <string name="topStories">Top Stories</string>
+    <string name="Sections">Sections</string>
+    <string name="Details">Details</string>
+    <string name="error_config">GCM ERROR CONFIG</string>
+    <string name="title_activity_video">Video</string>
+    <string name="title_activity_forgot_pwd">Forgot Password</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_registration">Registration</string>
+    <string name="title_activity_my_account">My Account</string>
+    <string name="title_activity_my_profile">My Profile</string>
+    <string name="title_activity_update_profile">Update Profile</string>
+    <string name="frgtpwd">Forgot Password</string>
+    <string name="signin">Sign in</string>
+    <string name="autherr">Authentication Error</string>
+    <string name="title_activity_my_favorites">My Favorites</string>
+    <string name="title_activity_change_pwd">Change Password</string>
+    <string name="title_activity_edit_profile">Edit Profile</string>
+    <string name="title_activity_countries">Countries</string>
+    <string name="title_activity_states">States</string>
+    <string name="title_activity_city">City</string>
+    <!--1st with out success<string name="banner_home_footer">ca-app-pub-1245050593606452/9897001322</string>-->
+    <!--2nd with success<string name="banner_home_footer">ca-app-pub-3940256099942544/6300978111</string>-->
+
+    <string name="banner_home_footer">ca-app-pub-9794223737728413/3809586274</string>
+    <string name="banner_home_footer1">ca-app-pub-9794223737728413/5122928677</string>
+    <string name="banner_home_footer2">ca-app-pub-9794223737728413/6599661876</string>
+    <string name="banner_home_footer3">ca-app-pub-9794223737728413/8076395075</string>
+    <string name="banner_home_footer4">ca-app-pub-9794223737728413/9553128271</string>
+
+
+</resources>
